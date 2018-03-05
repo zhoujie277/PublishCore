@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+//        maven{
+//            url 'https://dl.bintray.com/zhoujie0936/maven'
+//        }
+        mavenCentral()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+apply plugin: 'com.android.library'
+
+apply from: 'multidex.gradle'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    resourcePrefix "bounceprogressbar__"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['java']
+            resources.srcDirs = ['java']
+            aidl.srcDirs = ['java']
+            renderscript.srcDirs = ['java']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+
+}
+
+apply from: 'bintray.gradle'
+
+// 发布到本地仓库的配置
+//apply plugin: 'maven'
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        repository(url: LOCAL_REPO_URL)
+//        pom.groupId = PROJ_GROUP
+//        pom.artifactId = PROJ_ARTIFACTID
+//        pom.version = PROJ_VERSION
+//    }
+//}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile project(':CordovaLib')
+    compile 'com.mysoft.cordova:CordovaLib:6.2.3'
+    compile 'com.getsentry.raven:raven-android:7.8.2'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    //    compile files('libs/okhttp-3.4.1.jar')
+    //    compile files('libs/okio-1.10.0.jar')
+    //    compile files('libs/glide-3.7.0.jar')
+}
+
+

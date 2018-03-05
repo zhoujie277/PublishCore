@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mysoft" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <feature name="MicCore">
+        <param name="android-package" value="com.mysoft.core.MicCore"/>
+    </feature>
+    <feature name="MHotUpdate">
+        <param name="android-package" value="com.mysoft.plugin.MHotUpdate"/>
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="Keyboard">
+        <param name="android-package" value="io.ionic.keyboard.IonicKeyboard"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="PermissionPlugin">
+        <param name="android-package" value="com.mysoft.plugin.PermissionManagerPlugin"/>
+        <param name="onload" value="true"/>
+    </feature>
+</widget>

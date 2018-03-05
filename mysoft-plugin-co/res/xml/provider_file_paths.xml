@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <external-path
+        name="external_root"
+        path="/"/>
+
+    <files-path
+        name="cropCache"
+        path="cropCache"/>
+
+    <files-path
+        name="wzsImage"
+        path="wzsImage"/>
+
+    <!--<external-path-->
+        <!--name="rc_external_path"-->
+        <!--path="."/>-->
+</paths>

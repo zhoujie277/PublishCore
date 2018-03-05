@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="start_bg_color">#FFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFF9900</color>
+    <color name="gray">#FF717171</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#30000000</color>
+    <color name="black">#FF000000</color>
+    <color name="more_black_bg">#96000000</color>
+    <color name="pink">#FFFF00FF</color>
+    <color name="browser_title_stroke_color">#FF9A9A9A</color>
+    <color name="blue">#2162BD</color>
+    <color name="menu_press">#FF00599F</color>
+    <color name="dialog_bg">#1B252F</color>
+    <color name="uvv_light_gray">#ffF3F3F3</color>
+    <color name="color_999999">#FF999999</color>
+    <!-- Widgetone use -->
+    <color name="widget_dialog_title_line_color">#666666</color>
+    <color name="widget_bg_color">#333333</color>
+    <color name="activity_window_background_color">#60000000</color>
+
+    <!-- 背景主色值和辅色值 -->
+    <color name="font_color">#333</color>
+    <color name="button_font_color">#ffffff</color>
+    <color name="layout_backround_color">#e5ffffff</color>
+    <!-- 主色调 -->
+    <color name="main_backgroud_color">#ffffff</color>
+    <!-- 分割线 -->
+    <color name="line_color">#b2b2b2</color>
+    <color name="secondary_backgroud_color">#e5e5e5</color>
+    <!-- 待派单 -->
+    <color name="distribute_leaflets_color">#bb33ee</color>
+    <!-- 作废 -->
+    <color name="to_void_color">#808080</color>
+    <!-- 非正常关闭 -->
+    <color name="not_normal_close_color">#333333</color>
+    <!-- 待整改 -->
+    <color name="stay_rectification_color">#ff4431</color>
+    <!-- 已整改 -->
+    <color name="has_rectification_color">#0099ff</color>
+    <!-- 已通过 -->
+    <color name="has_through_color">#38bf63</color>
+    <!-- 检查通过按钮颜色 -->
+    <color name="bt_pass_color">#0099ff</color>
+    <!-- 字体默认颜色 -->
+    <color name="main_font_color">#111111</color>
+    <!-- 字体选中颜色 -->
+    <color name="select_font_color">#0099ff</color>
+    <color name="image_color">#000000</color>
+
+    <!-- 相机返回键颜色 -->
+    <color name="bule_return">#0099ff</color>
+    <!-- 签名界面颜色值 -->
+    <color name="sign_title_backgroud_color">#f2f2f2</color>
+    <!-- 撤销按钮颜色值 -->
+    <color name="cancel_color">#BFBFBF</color>
+    <!-- 暂不接受按钮颜色 -->
+    <color name="gray_color">#E1E1E1</color>
+
+</resources>
